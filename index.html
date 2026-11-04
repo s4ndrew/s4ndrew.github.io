@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andres Chiroque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="container-xl px-0">
     <nav class="navbar navbar-expand-md ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-terminal "> Andres</i></a>
+            <a class="navbar-brand text-light fw-bold fs-6" href="#"><i class="bi bi-terminal me-1 fs-5" style="color: #10b981"></i>Andres <strong style="color: #10b981">Chiroque</strong> </a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-list fs-1" style="color: currentColor;"></i>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-md-center fw-bolder " id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse justify-content-md-center  " id="navbarNav">
+                <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#">Skills</a>
                     </li>
@@ -36,6 +41,7 @@
         </div>
     </nav>
 </header>
+<hr>
 <main>
     <div class="container my-5 py-5">
         <div class="row flex-md-row-reverse justify-content-between ">
@@ -43,11 +49,12 @@
                 <img src="" alt="Perfil">
             </div>
             <div class="col-12 col-md-6">
-                <div class="text-center d-flex flex-column justify-content-center align-items-center gap-1">
-                    <h3>Andres chiroque</h3>
-                    <h5><strong>Backend Developer</strong></h5>
+                <div class="">
+                    <h1 class="fw-bold">Hola, soy</h1>
+                    <h1 class="fw-bold" style="color: #e76f51">Andres chiroque</h1>
+                    <h5 class="pt-2 back"><strong>Backend Developer</strong></h5>
                 </div>
-                <p class="">
+                <p class="py-3">
                     Desarrollador Backend Junior enfocado en el ecosistema Java y Spring Boot. Sin experiencia laboral,
                     pero con sólida práctica construyendo APIs RESTful completas, aplicando arquitectura por capas.
                     Apasionado por el modelado de bases de datos relacionales con PostgreSQL. Motivado por integrarme a
@@ -67,54 +74,59 @@
 
     <div class="container my-5 py-5">
         <h2 class="text-center "><strong>Skills</strong></h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/java.svg" alt="" style="height: 120px;" class="card-img-top p-2">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/java.svg" alt="" style="height: 70px;" class="card-img-top">
                     </div>
-                    <div class="card-body mb-4">
-                        <h5 class="text-center">JAVA</h5>
+                    <div class="card-body skill">
+                        <h6 class="text-center">JAVA</h6>
+                        <p class="text-center">Lenguaje principal</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/spring.svg" alt="" style="height: 120px;" class="card-img-top p-2">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/spring.svg" alt="" style="height: 70px;" class="card-img-top">
                     </div>
-                    <div class="card-body mb-4 ">
-                        <h5 class="text-center">SPRING BOOT</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/postgresql.svg" alt="" style="height: 120px;" class="card-img-top p-2">
-                    </div>
-                    <div class="card-body mb-4 ">
-                        <h5 class="text-center">POSTGRESQL</h5>
+                    <div class="card-body skill">
+                        <h6 class="text-center">SPRING BOOT</h6>
+                        <p class="text-center">APIs REST</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/html.svg" alt="" style="height: 120px;" class="card-img-top p-2">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/postgresql.svg" alt="" style="height: 70px;" class="card-img-top">
                     </div>
-                    <div class="card-body mb-4 ">
-                        <h5 class="text-center">HTML</h5>
+                    <div class="card-body skill">
+                        <h6 class="text-center">POSTGRESQL</h6>
+                        <p class="text-center">Bases de datos</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/css.svg" alt="logo css" style="height: 120px;" class="card-img-top p-2">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/html.svg" alt="" style="height: 70px;" class="card-img-top">
                     </div>
-                    <div class="card-body mb-4">
-                        <h5 class="card-title text-center">CSS</h5>
+                    <div class="card-body skill">
+                        <h6 class="text-center">HTML</h6>
+                        <p class="text-center">Estructura web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/css.svg" alt="logo css" style="height: 70px;" class="card-img-top">
+                    </div>
+                    <div class="card-body skill">
+                        <h6 class="card-title text-center">CSS</h6>
+                        <p class="text-center">Diseño y estilos</p>
                     </div>
                 </div>
             </div>
@@ -125,45 +137,49 @@
 
     <div class="container my-5 py-5">
         <h2 class="text-center mt-2"><strong>Herramientas</strong></h2>
-        <div class="row  row-cols-1  row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 mt-4">
+        <div class="row  row-cols-1  row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/github.svg" class="card-img-top p-2" alt="..." style="height: 120px;">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/github.svg" class="card-img-top p-2" alt="..." style="height: 70px;">
                     </div>
-                    <div class="card-body mb-4">
-                        <h5 class="card-title text-center">GITHUB</h5>
+                    <div class="card-body herramientas">
+                        <h6  class="card-title text-center">GITHUB</h6>
+                        <p class="text-center">Básico</p>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/postman.svg" class="card-img-top p-2" alt="..." style="height: 120px;">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/postman.svg" class="card-img-top p-2" alt="..." style="height: 70px;">
                     </div>
-                    <div class="card-body mb-4">
-                        <h5 class="card-title text-center">POSTMAN</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/intellij.svg" class="card-img-top p-2" alt="..." style="height: 120px;">
-                    </div>
-                    <div class="card-body mb-4">
-                        <h5 class="card-title text-center">INTELLIJ IDE</h5>
+                    <div class="card-body herramientas">
+                        <h6  class="card-title text-center">POSTMAN</h6>
+                        <p class="text-center">Pruebas de APIs</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="py-4">
-                        <img src="assets/webStrom.svg" class="card-img-top p-2" alt="..." style="height: 120px;">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/intellij.svg" class="card-img-top p-2" alt="..." style="height: 70px;">
                     </div>
-                    <div class="card-body mb-4">
-                        <h5 class="card-title text-center">WEBSTROM</h5>
+                    <div class="card-body herramientas">
+                        <h6 class="card-title text-center">INTELLIJ IDE</h6>
+                        <p class="text-center">IDE Principal Java</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-4">
+                    <div class="pt-4">
+                        <img src="assets/webStrom.svg" class="card-img-top p-2" alt="..." style="height: 70px;">
+                    </div>
+                    <div class="card-body herramientas">
+                        <h6 class="card-title text-center">WEBSTROM</h6>
+                        <p class="text-center">IDE Front end</p>
                     </div>
                 </div>
             </div>
@@ -212,9 +228,51 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container mt-5 py-5">
+        <h2 class="text-center"><strong>Educación y formación</strong></h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            <div class="col">
+                <div class="card py-2">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <p>2025 - Presente</p>
+                            <img src="" alt="s">
+                        </div>
+                        <h5 class="card-title">Computación e Informatica</h5>
+                        <p class="card-text">Formación tecnica en CIBERTEC</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-title">Administración de Negocios Bancarios y Financieros</h5>
+                        <p class="card-text">Enfocado en el sistema de Banca, operaciones y diversos productos</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <footer>
-
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>2026 Andres chiroque</p>
+            </div>
+            <div class="col text-end">
+                <div class="d-flex flex-row-reverse gap-1">
+                    <div><img src="" alt="Github"></div>
+                    <div><img src="" alt="linkdin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
