@@ -95,6 +95,7 @@ p {
 }
 
 .footer__nombre,.subtitulo__educacion{
+    color: var(--java);
     font-size: 12px;
 }
 
