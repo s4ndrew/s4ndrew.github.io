@@ -17,7 +17,6 @@ body {
     padding: 0;
 }
 
-
 .nav-link {
    color: var(--gris);
 }
@@ -58,13 +57,13 @@ p {
     font-size: 13px
 }
 
-/*VALIDAD HACIA ABAJO*/
-/* Efecto hover sutil para las tarjetas */
+
 .card:hover {
-    border-color: var(--java); /* O usa --verde si prefieres */
+    border-color: var(--java);
+    transform: translateY(-4px);
 }
 
-/* Botones principales (ej. Descargar CV) */
+
 .btn-primary {
     background-color: var(--java);
     color: #ffffff;
@@ -73,14 +72,14 @@ p {
     padding: 10px 20px;
     font-weight: 600;
     cursor: pointer;
-    transition: opacity 0.2s;
 }
 
 .btn-primary:hover {
     opacity: 0.9;
+    background-color: var(--verde);
 }
 
-/* Botones secundarios (GitHub, LinkedIn, Proyectos) */
+
 .btn-secondary {
     background-color: var(--card);
     color: var(--blanco);
@@ -95,3 +94,13 @@ p {
     border-color: var(--gris);
 }
 
+.footer__nombre,.subtitulo__educacion{
+    font-size: 12px;
+}
+
+.footer__link > a{
+    color: var(--gris);
+}
+.footer__link > a:hover{
+    color: var(--java);
+}
